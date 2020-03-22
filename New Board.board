@@ -1,0 +1,32 @@
+# This will be the bottom graphical layer
+set-z -1.0
+pen white 1
+brush white
+# background
+dec-rect 0 0 200 400
+
+
+#PVC Layer
+set-z 1.0
+pen gray 4
+line 0 400 0 0 
+line 0 0 200 0
+line 0 400 200 400 
+line 200  400  200 0
+line 0 200 150 200
+line 50 150 100 150
+line 100 150 100 0
+line 150 200 150 50
+line 50 350 200 350
+
+#Tape across the board notice the black tape is below the PVC on the z layer
+set-z 0
+pen black 4
+tape 50 175 150 175
+tape 127 150 127 50
+tape 100 50 150 50
+tape 50 150 50 50
+tape 50 150 50 50
+tape 200 250 50 350
+tape 165 350 165 400
+tape 0  50 50 50
